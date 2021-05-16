@@ -35,6 +35,10 @@ img {
 .link {
   text-decoration: none;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .contanier {
   width: 1200px;
   padding-left: 15px;
@@ -57,13 +61,26 @@ body {
 }
 .hero-title,
 .hero {
+  text-align: center;
+  margin: 0 auto;
   background-color: var(--footer-background-color);
 }
 .header {
   background-color: var(--body-background-color);
 }
 .team {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-color);
+}
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.pictures-title,
+.team-title {
+  margin-bottom: 50px;
 }
 /*=====end general style========*/
 
@@ -133,6 +150,8 @@ body {
 
 /*============hero=============*/
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 280px;
   font-family: inherit;
   font-weight: 900;
   font-size: 44px;
@@ -141,11 +160,23 @@ body {
   text-transform: uppercase;
   color: var(--body-background-color);
 }
+.project {
+  flex-basis: calc((100% - 90px) / 3);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
 .project-thumbnail {
+  margin-left: 30px;
+  margin-top: 30px;
   width: 370px;
   height: 294px;
   left: 1015px;
   top: 1130px;
+}
+.project-heading-content {
+  padding-top: 30px;
 }
 .project-heading {
   font-family: inherit;
@@ -154,6 +185,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-bottom: 4px;
 }
 .project-description {
   font-family: inherit;
@@ -227,6 +259,22 @@ body {
 /*=====end skills company======*/
 
 /*========pictures=============*/
+.pictures {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.pictures-list {
+  flex-basis: calc((100% - 90px) / 3);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.pictures-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .pictures-title {
   font-family: inherit;
   font-weight: 700;
@@ -237,6 +285,17 @@ body {
 }
 /*=====end pictures============*/
 /*=========team================*/
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-list-item {
+  flex-basis: calc((100%-120px) / 5);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .team-title {
   font-family: inherit;
   font-weight: 700;
@@ -252,6 +311,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
+}
+.team-list-content {
+  padding-top: 30px;
 }
 .team-list-item-position {
   font-family: inherit;
