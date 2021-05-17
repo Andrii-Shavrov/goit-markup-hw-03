@@ -36,6 +36,7 @@ img {
   text-decoration: none;
 }
 .section {
+  display: block;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -161,15 +162,15 @@ body {
   color: var(--body-background-color);
 }
 .project {
-  flex-basis: calc((100% - 90px) / 3);
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-bottom: 30px;
 }
-.project-thumbnail {
-  margin-left: 30px;
-  margin-top: 30px;
+.project-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-item:nth-last-child(-n + 3) .project-thumbnail {
   width: 370px;
   height: 294px;
   left: 1015px;
@@ -196,6 +197,7 @@ body {
   color: var(--text-color);
 }
 .modal-btn {
+  display: inline-block;
   width: 200px;
   height: 50px;
   left: 700px;
@@ -211,12 +213,13 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
-  display: inline-block;
-  padding: 10px 32px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
   color: var(--logo-color);
+}
+.filter-options {
+  display: block;
 }
 .filter-item {
   color: var(--logo-color);
@@ -239,6 +242,18 @@ body {
 /*============end hero=========*/
 
 /*=======skills company========*/
+.skills-list {
+  display: flex;
+  padding-top: 94px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.skills-list-item {
+  width: 270px;
+  width: calc((100% - 120) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .skills-list-title {
   font-family: inherit;
   font-weight: 700;
@@ -247,6 +262,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .skills-list-text {
   font-family: inherit;
@@ -330,21 +346,23 @@ body {
 .footer {
   background-color: var(--footer-background-color);
 }
-.logo-link {
+.logo-link-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 20px;
 }
-.logo-2 {
+.logo-2-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--body-background-color);
+  margin-bottom: 20px;
 }
 .address-link {
   font-family: inherit;
