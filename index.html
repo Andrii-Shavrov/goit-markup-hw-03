@@ -17,42 +17,42 @@
     <!--header-->
     <header class="header">
         <div class="contanier header-contanier">
-          <nav class="navigation">
-            <a class="logo-link link" href="./index.html" lang="en">Web<span class="logo-1 link">Studio</span></a>
-            <ul class="menu list">   
-                <li class="menu-item">
-                    <a class="menu-link link current" href="./index.html">Студия</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Контакты</a>
-                </li>
-            </ul>
-          </nav>
+            <nav class="navigation">
+                <a class="logo-link link" href="./index.html" lang="en"><span class="logo-1 link">Web</span>Studio</a>
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="menu-link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="#page_bottom">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
             <ul class="header-contact list">
-            <li class="header-contact-item">
-               <a class="header-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="header-contact-item">
-               <a class="header-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
+                <li class="header-contact-item">
+                    <a class="header-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="header-contact-item">
+                    <a class="header-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
-    </header>    
+    </header>
     <main>
     <!--section hero-->
         <section class="hero">
-            <div class="contanier hero-contanier">
-                <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
-                <button class="modal-btn" type="button">Закзать услугу</button>
+            <div class="contanier">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="modal-btn" type="button">Заказать услугу</button>
             </div>
         </section>
     <!--skills company-->
         <section class="skills">
             <div class="contanier">
-                <h2 hidden>Особенности компании</h2>
+                <h2 class="hiden-title">Особенности компании</h2>
                 <ul class="skills-list list">
                     <li class="skills-list-item">
                         <h3 class="skills-list-title">Внимание к деталям</h3>
@@ -92,38 +92,38 @@
                     </li>
                 </ul>
                 </div>
-        </section>
+            </section>
     <!--team-->
         <section class="team">
             <div class="contanier">
             <h2 class="team-title">Наша команда</h2>
-            <ul class="team-list list">
+            <ul class="team-list flex list">
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/team/img.jpg" alt="Игорь Демьяненко" width="270" height="260">
                     <div class="team-list-content">
                        <h3 class="team-list-item-name">Игорь Демьяненко</h3>
-                       <p class="team-list-item-position" lang="en">Product Designer</p>.
+                       <p class="team-list-item-position" lang="en">Product Designer</p>
                     </div>
                 </li>
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/team/img-1.jpg" alt="Ольга Репина" width="270" height="260">
                     <div class="team-list-content">
                        <h3 class="team-list-item-name">Ольга Репина</h3>
-                       <p class="team-list-item-position" lang="en">Frontend Developer</p>.
+                       <p class="team-list-item-position" lang="en">Frontend Developer</p>
                     </div>
                 </li>
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/team/img-2.jpg" alt="Николай Тарасов" width="270" height="260">
                     <div class="team-list-content">
                        <h3 class="team-list-item-name">Николай Тарасов</h3>
-                       <p class="team-list-item-position" lang="en">Marketing</p>.
+                       <p class="team-list-item-position" lang="en">Marketing</p>
                     </div>
                 </li>
                 <li class="team-list-item">
                     <img class="team-list-item-img" src="./images/team/img-3.jpg" alt="Михаил Ермаков" width="270" height="260">
                     <div class="team-list-content">
                        <h3 class="team-list-item-name">Михаил Ермаков</h3>
-                       <p class="team-list-item-position" lang="en">UI Designer</p>.
+                       <p class="team-list-item-position" lang="en">UI Designer</p>
                     </div>
                 </li>
             </ul>
@@ -132,12 +132,13 @@
     </main>
     <!--footer-->
     <footer class="footer">
-        <div class="contanier footer-contanier">
-            <a class="logo-link-footer link" href="./index.html" lang="en">Web<span class="logo-2-footer">Studio</span></a>
-            <address class="address">
-                <ul class="footer-address list">
+        <div class="contanier">
+            <a class="logo-link-footer link" href="./index.html" lang="en"><span
+                    class="logo-2-footer">Web</span>Studio</a><br>
+                <address class="address-link">
+                <ul id="page_bottom" class="footer-address list">
                     <li class="address-list-item">
-                        <a class="address-link link" href="https://goo.gl/maps/nFPgF8o5voA4oPt57" target="_blank"
+                        <a class="address-link-map link" href="https://goo.gl/maps/nFPgF8o5voA4oPt57" target="_blank"
                             rel="noopener noreferrer">
                             Киев, пр-т Леси Украинки, 26</a>
                     </li>

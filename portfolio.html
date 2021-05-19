@@ -18,7 +18,7 @@
     <header class="header">
         <div class="contanier header-contanier">
         <nav class="navigation">
-            <a class="logo-link link" href="./index.html" lang="en">Web<span class="logo-1 link">Studio</span></a>
+            <a class="logo-link link" href="./index.html" lang="en"><span class="logo-1 link">Web</span>Studio</a>
             <ul class="menu list">
                 <li class="menu-item">
                     <a class="menu-link link" href="./index.html">Студия</a>
@@ -27,7 +27,7 @@
                     <a class="menu-link link current" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link link" href="">Контакты</a>
+                    <a class="menu-link link" href="#page_bottom">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -41,12 +41,12 @@
         </ul>
         </div>
     </header>
-    <main class="project-section">
+    <main>
         <!--section hero-->
         <section class="portfolio">
             <div class="contanier">
-                <h2 hidden>Portfolio</h2>            
-                <ul class="filter-options list">
+                <h2 class="hiden-title">Portfolio</h2>            
+                <ul class="filter-options flex list">
                     <li>
                         <button type="button" class="filter-item">Все</button>                        
                     </li>
@@ -63,7 +63,7 @@
                         <button type="button" class="filter-item">Маркетинг</button>
                     </li>
                 </ul>
-                <ul class="project list">
+                <ul class="project flex list">
                     <li class="project-item">
                         <a href="" class="project-foto link">
                             <img class="project-thumbnail" src="./images/Portfolio/foto-1.jpg" alt="Технокряк" width="370" height="294">
@@ -151,24 +151,25 @@
     </main>
     <!--footer-->
     <footer class="footer">
-        <div class="contanier footer-contanier">
-         <a class="logo-link-footer link" href="./index.html" lang="en">Web<span class="logo-2-footer">Studio</span></a>
-         <address class="address">
-            <ul class="footer-address list">
-                <li class="address-list-item">
-                    <a class="address-link link" href="https://goo.gl/maps/nFPgF8o5voA4oPt57" target="_blank"
-                        rel="noopener noreferrer">
-                        Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="address-list-item">
-                    <a class="address-contact-link link" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="address-list-item">
-                    <a class="address-contact-link link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
-         </address>
-         </div>
+        <div class="contanier">
+            <a class="logo-link-footer link" href="./index.html" lang="en"> <span
+                    class="logo-2-footer">Web</span>Studio</a><br>
+                <address class="address-link">
+                <ul id="page_bottom" class="footer-address list">
+                    <li class="address-list-item">
+                        <a class="address-link-map link" href="https://goo.gl/maps/nFPgF8o5voA4oPt57" target="_blank"
+                            rel="noopener noreferrer">
+                            Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="address-list-item">
+                        <a class="address-contact-link link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address-list-item">
+                        <a class="address-contact-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
